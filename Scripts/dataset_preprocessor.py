@@ -33,6 +33,7 @@ class DatasetPreprocessor:
         # Ensure the main dataset directory exists
         if not os.path.exists(self.__dataset_root):
             os.mkdir(self.__dataset_root)
+            
         # Process each folder individually
         for folder_name in self.__folders:
             if os.path.exists(folder_name):
@@ -55,10 +56,12 @@ class DatasetPreprocessor:
         # Enumerate over all images in the current folder
         for i, file in enumerate(os.listdir(folder_name)):
             src_path = os.path.join(folder_name, file)  # full source path
+            # print(src_path)
             _, extension = os.path.splitext(file)  # extract file extension
+            print(extension)
 
             # Create a clean, numbered filename in the destination folder
-            destination_path = os.path.join(destination_folder, f"{i+1}.{extension}")
+            destination_path = os.path.join(destination_folder, f"{i+1}{extension}")
 
             # Copy the image to dataset folder
             shutil.copy(src_path, destination_path)
@@ -66,10 +69,3 @@ class DatasetPreprocessor:
             # Stop once desired number of files are copied
             if i == max_files - 1:
                 break
-
-
-if __name__ == "__main__":
-    root_path = "dataset"
-    folders = ["Melanoma", "Chickenpox", "Herpes", "Eczema", "Acne", "Measles", "Lupus"]
-    preprocess = DatasetPreprocessor(root_path, folders)
-    preprocess.prepare_dataset(50)
