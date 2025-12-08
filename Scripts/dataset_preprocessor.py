@@ -58,7 +58,6 @@ class DatasetPreprocessor:
             src_path = os.path.join(folder_name, file)  # full source path
             # print(src_path)
             _, extension = os.path.splitext(file)  # extract file extension
-            print(extension)
 
             # Create a clean, numbered filename in the destination folder
             destination_path = os.path.join(destination_folder, f"{i+1}{extension}")
