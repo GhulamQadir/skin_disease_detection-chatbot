@@ -1,0 +1,32 @@
+{
+  "Chickenpox": {
+    "description": "A viral infection causing itchy red spots and blisters.",
+    "treatment": "Rest, drink fluids, apply calamine lotion, and avoid scratching. Consult a doctor if severe.",
+    "folder_path": "dataset/Chickenpox"
+  },
+  "Acne": {
+    "description": "A common skin condition causing pimples, blackheads, or whiteheads.",
+    "treatment": "Use gentle cleansers, topical benzoyl peroxide, avoid squeezing pimples, and maintain hygiene.",
+    "folder_path": "dataset/Acne"
+  },
+  "Eczema": {
+    "description": "A condition that makes skin red, itchy, and inflamed.",
+    "treatment": "Moisturize regularly, avoid irritants, use prescribed topical corticosteroids.",
+    "folder_path": "dataset/Eczema"
+  },
+  "Lupus": {
+    "description": "An autoimmune disease that can affect skin and organs, causing rashes and inflammation.",
+    "treatment": "Avoid sun exposure, use prescribed medications, and consult a specialist.",
+    "folder_path": "dataset/Lupus"
+  },
+  "Herpes": {
+    "description": "A viral infection causing painful blisters or sores, often around the mouth or genitals.",
+    "treatment": "Antiviral medications, avoid touching lesions, and maintain hygiene.",
+    "folder_path": "dataset/Herpes"
+  },
+  "Melanoma": {
+    "description": "A serious form of skin cancer, usually appearing as dark, irregular moles or spots.",
+    "treatment": "Immediate consultation with a dermatologist or oncologist is required.",
+    "folder_path": "dataset/Melanoma"
+  }
+}
