@@ -57,8 +57,3 @@ class DiseaseInfo:
         if disease_name not in self.__data:
             raise KeyError("Disease not found")
         return self.__data[disease_name]
-
-
-d = DiseaseInfo()
-disease_info = d.get_info("cne")
-print(disease_info)

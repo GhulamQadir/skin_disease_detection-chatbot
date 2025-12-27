@@ -1,11 +1,11 @@
-from matcher import ImageMatcher
+# from image_processor import ImageMatcher
 
 
-class ChatbotEngine:
-    def __init__(self):
-        pass
+# class ChatbotEngine:
+#     def __init__(self):
+#         pass
 
-    def process_image(self, image):
-        image_matcher = ImageMatcher(image)
-        np_arr = image_matcher._load_image()
-        print(np_arr)
+#     def process_image(self, image: str):
+#         image_matcher = ImageMatcher()
+#         data = image_matcher.match_image(image)
+#         return data
