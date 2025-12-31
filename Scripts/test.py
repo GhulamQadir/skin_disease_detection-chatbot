@@ -1,4 +1,4 @@
-from dataset_preprocessor import DatasetPreprocessor
+from .dataset_preprocessor import DatasetPreprocessor
 
 
 def test():
