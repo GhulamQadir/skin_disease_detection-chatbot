@@ -1,4 +1,4 @@
 os
-shutil
 cv2
 json
+PIL
